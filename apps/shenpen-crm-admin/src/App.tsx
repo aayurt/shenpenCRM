@@ -9,22 +9,22 @@ import { UserList } from "./user/UserList";
 import { UserCreate } from "./user/UserCreate";
 import { UserEdit } from "./user/UserEdit";
 import { UserShow } from "./user/UserShow";
-import { OrderList } from "./order/OrderList";
-import { OrderCreate } from "./order/OrderCreate";
-import { OrderEdit } from "./order/OrderEdit";
-import { OrderShow } from "./order/OrderShow";
-import { CustomerList } from "./customer/CustomerList";
-import { CustomerCreate } from "./customer/CustomerCreate";
-import { CustomerEdit } from "./customer/CustomerEdit";
-import { CustomerShow } from "./customer/CustomerShow";
-import { AddressList } from "./address/AddressList";
-import { AddressCreate } from "./address/AddressCreate";
-import { AddressEdit } from "./address/AddressEdit";
-import { AddressShow } from "./address/AddressShow";
-import { ProductList } from "./product/ProductList";
-import { ProductCreate } from "./product/ProductCreate";
-import { ProductEdit } from "./product/ProductEdit";
-import { ProductShow } from "./product/ProductShow";
+import { CategoryList } from "./category/CategoryList";
+import { CategoryCreate } from "./category/CategoryCreate";
+import { CategoryEdit } from "./category/CategoryEdit";
+import { CategoryShow } from "./category/CategoryShow";
+import { AuthorList } from "./author/AuthorList";
+import { AuthorCreate } from "./author/AuthorCreate";
+import { AuthorEdit } from "./author/AuthorEdit";
+import { AuthorShow } from "./author/AuthorShow";
+import { SubCategoryList } from "./subCategory/SubCategoryList";
+import { SubCategoryCreate } from "./subCategory/SubCategoryCreate";
+import { SubCategoryEdit } from "./subCategory/SubCategoryEdit";
+import { SubCategoryShow } from "./subCategory/SubCategoryShow";
+import { TagList } from "./tag/TagList";
+import { TagCreate } from "./tag/TagCreate";
+import { TagEdit } from "./tag/TagEdit";
+import { TagShow } from "./tag/TagShow";
 import { jwtAuthProvider } from "./auth-provider/ra-auth-jwt";
 
 const App = (): React.ReactElement => {
@@ -59,32 +59,32 @@ const App = (): React.ReactElement => {
           show={UserShow}
         />
         <Resource
-          name="Order"
-          list={OrderList}
-          edit={OrderEdit}
-          create={OrderCreate}
-          show={OrderShow}
+          name="Category"
+          list={CategoryList}
+          edit={CategoryEdit}
+          create={CategoryCreate}
+          show={CategoryShow}
         />
         <Resource
-          name="Customer"
-          list={CustomerList}
-          edit={CustomerEdit}
-          create={CustomerCreate}
-          show={CustomerShow}
+          name="Author"
+          list={AuthorList}
+          edit={AuthorEdit}
+          create={AuthorCreate}
+          show={AuthorShow}
         />
         <Resource
-          name="Address"
-          list={AddressList}
-          edit={AddressEdit}
-          create={AddressCreate}
-          show={AddressShow}
+          name="SubCategory"
+          list={SubCategoryList}
+          edit={SubCategoryEdit}
+          create={SubCategoryCreate}
+          show={SubCategoryShow}
         />
         <Resource
-          name="Product"
-          list={ProductList}
-          edit={ProductEdit}
-          create={ProductCreate}
-          show={ProductShow}
+          name="Tag"
+          list={TagList}
+          edit={TagEdit}
+          create={TagCreate}
+          show={TagShow}
         />
       </Admin>
     </div>
